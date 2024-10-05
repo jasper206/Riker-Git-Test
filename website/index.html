@@ -3,12 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git</title>
+    <title>Practice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <!-- Pop out Window -->
+    <div class="leftPanel">
+      <div class="logo">
+        <div class="close" onclick="toggleMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2>Rikerworks</h2>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Home <i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#">About <i class="fa-solid fa-question"></i></a>
+        </li>
+        <li>
+          <a href="#">Admin <i class="fa-solid fa-shield"></i></a>
+        </li>
+        <li>
+          <a href="#">Logout <i class="fa-solid fa-key"></i></a>
+        </li>
+      </ul>
+    </div>
 
-    <p>Nothing to see here, just a simple branch and merge...</p>
-    <p>This is my branch... I think...2</p>
+    <!-- Outer Frame -->
+    <div class="frame">
+      <div class="open">
+        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+      <!-- Top Nav Bar -->
+      <nav></nav>
+      <!-- Left Micro Bar -->
+      <div class="lFrame">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-question"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-shield"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-key"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Main Section -->
+      <main></main>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/44244b50de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  color: black;
+  user-select: none;
+  font-family: "Jetbrains Mono", sans-serif;
+}
+
+.leftPanel {
+  background-color: white;
+  width: 20rem;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: -100%;
+  transition: 0.5s;
+  z-index: 99;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo h2 {
+  padding-left: 15px;
+}
+.close {
+  border-right: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+.close:hover {
+  background-color: red;
+}
+.open {
+  left: 0;
+  transition: 0.5s;
+}
+
+.lFrame ul,
+.leftPanel ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-top: 2px solid black;
+}
+.leftPanel a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.leftPanel a:hover {
+  background-color: rgb(72, 139, 175);
+  cursor: pointer;
+}
+.leftPanel li:last-child {
+  margin-top: auto;
+}
+.leftPanel li:last-child a:hover {
+  background-color: red;
+}
+
+.frame {
+  display: grid;
+  grid-template: min-content 1fr / min-content 1fr;
+}
+.open {
+  border-right: 2px solid black;
+}
+i {
+  position: relative;
+  padding: 15px;
+  cursor: pointer;
+}
+.lFrame {
+  border-right: 2px solid black;
+}
+.lFrame a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  color: black;
+}
+.lFrame a:hover {
+  background-color: black;
+  color: white;
+}
+.lFrame li:last-child {
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+nav {
+  border-bottom: 2px solid black;
+}
+main {
+  background-color: rgb(245, 244, 242);
+}
