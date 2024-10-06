@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
 }
-
 body {
   display: grid;
   height: 100vh;
@@ -11,6 +10,7 @@ body {
   font-family: "Jetbrains Mono", sans-serif;
 }
 
+/* Left Panel (Extended) */
 .leftPanel {
   background-color: white;
   width: 20rem;
@@ -42,7 +42,6 @@ body {
   left: 0;
   transition: 0.5s;
 }
-
 .lFrame ul,
 .leftPanel ul {
   list-style: none;
@@ -71,15 +70,18 @@ body {
   display: grid;
   grid-template: min-content 1fr / min-content 1fr;
 }
+/* Open Menu Button */
 .open {
   border-right: 2px solid black;
   border-bottom: 2px solid black;
 }
+/* Icons */
 i {
   position: relative;
   padding: 15px;
   cursor: pointer;
 }
+/* Left Panel (collapsed) */
 .lFrame {
   border-right: 2px solid black;
 }
@@ -100,9 +102,28 @@ i {
   padding-bottom: 20px;
 }
 
+/* Nav Bar (Top) */
 nav {
   border-bottom: 2px solid black;
+  overflow: hidden;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+nav a:hover {
+  background-color: rgb(72, 139, 175);
+  cursor: pointer;
+}
+
+/* Main Content */
 main {
   background-color: rgb(245, 244, 242);
 }
