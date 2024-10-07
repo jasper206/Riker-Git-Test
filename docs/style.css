@@ -126,5 +126,28 @@ nav a:hover {
 
 /* Main Content */
 main {
-  background-color: rgb(245, 244, 242);
+  background-color: rgb(220, 220, 220);
+  padding: 20px;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+  background-color: white;
+}
+.grid-frame {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 10px;
+}
+.g01,
+.g06 {
+  grid-column: span 2;
+}
+.g03 {
+  grid-row: span 3;
+  height: 100%;
 }
