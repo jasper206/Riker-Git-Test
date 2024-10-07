@@ -69,6 +69,7 @@ body {
 .frame {
   display: grid;
   grid-template: min-content 1fr / min-content 1fr;
+  z-index: 98;
 }
 /* Open Menu Button */
 .open {
@@ -128,4 +129,7 @@ nav a:hover {
 /* Main Content */
 main {
   background-color: rgb(245, 244, 242);
+}
+
+.grid-frame {
 }
