@@ -69,7 +69,6 @@ body {
 .frame {
   display: grid;
   grid-template: min-content 1fr / min-content 1fr;
-  z-index: 98;
 }
 /* Open Menu Button */
 .open {
@@ -109,17 +108,16 @@ nav {
   overflow: hidden;
 }
 nav ul {
+  height: 100%;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-  width: 100%;
 }
 nav a {
   text-decoration: none;
   color: black;
-  padding: 20px 40px;
+  padding: 20px;
 }
 nav a:hover {
   background-color: rgb(72, 139, 175);
@@ -129,7 +127,4 @@ nav a:hover {
 /* Main Content */
 main {
   background-color: rgb(245, 244, 242);
-}
-
-.grid-frame {
 }
