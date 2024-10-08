@@ -140,14 +140,20 @@ main {
 }
 .grid-frame {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
   gap: 10px;
 }
 .g01,
 .g06 {
-  grid-column: span 2;
+  grid-column: span 3;
 }
-.g03 {
-  grid-row: span 3;
+.g04 {
+  height: 100%;
+}
+.g05 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 5;
+  grid-column-end: 4;
   height: 100%;
 }
