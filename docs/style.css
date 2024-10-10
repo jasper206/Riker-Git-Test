@@ -12,7 +12,7 @@ body {
 
 /* Left Panel (Extended) */
 .leftPanel {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 20rem;
   height: 100%;
   color: black;
@@ -127,13 +127,14 @@ nav a:hover {
 /* Main Content */
 main {
   background-color: rgb(220, 220, 220);
-  padding: 20px;
+  padding: 10px;
 }
 .grid-item {
   width: 100%;
   height: 100px;
   border: 2px solid black;
   background-color: white;
+  text-align: center;
   transition: 0.2s;
 }
 .grid-item:hover {
