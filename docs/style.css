@@ -160,3 +160,10 @@ main {
   grid-column-end: 4;
   height: 100%;
 }
+
+.red {
+  background-color: red;
+}
+.red:hover {
+  background-color: darkred;
+}
